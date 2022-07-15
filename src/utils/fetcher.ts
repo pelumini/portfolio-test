@@ -9,6 +9,7 @@ const fetcher = async <T>(url: string, headers = {}): Promise<T | null> => {
 
     return data
   } catch (e: any) {
+    console.log('fetcher error', e)
     return null
   }
 }
