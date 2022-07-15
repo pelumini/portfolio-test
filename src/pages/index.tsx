@@ -36,7 +36,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     `${process.env.NEXT_PUBLIC_SERVER_ENDPOINT}/api/me`,
     context.req.headers
   )
-  console.log('data2', data)
   return { props: { fallbackData: data } }
 }
 

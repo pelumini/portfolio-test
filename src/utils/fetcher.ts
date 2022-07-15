@@ -6,7 +6,7 @@ const fetcher = async <T>(url: string, headers = {}): Promise<T | null> => {
       headers,
       withCredentials: true,
     })
-
+    console.log('fetcher data', data)
     return data
   } catch (e: any) {
     console.log('fetcher error', e)
